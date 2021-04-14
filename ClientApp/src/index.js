@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import Faker from 'faker';
 import HomePage from './components/home/HomePage';
+import Register from './components/register/Register';
 
 
 const App = () => {
     return( 
         <div>
-            <HomePage/>
-            
+            <Register/>           
         </div>
     );
 };
