@@ -15,14 +15,13 @@ const HomePage = () => {
         <div className="row">
             <div className="leftcolumn">
               <BlogElements/>
-              <BlogElements/>
 
             </div>
             <div className="rightcolumn">
                 <div className="card">
                     <h2>Abaut us</h2>
                     <div className="fakeimg" style={{"height":"100px"}}>Image</div>
-                    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+                    <p>{Faker.random.words(10)}</p>
                 </div>
                 <div className="card">
                     <h3>Popular Plants</h3>
@@ -32,7 +31,7 @@ const HomePage = () => {
                 </div>
                 <div className="card">
                     <h3>Our Gallery</h3>
-                    <p>Some text..</p>
+                    <p>{Faker.random.words(5)}</p>
                 </div>
             </div>
         </div>

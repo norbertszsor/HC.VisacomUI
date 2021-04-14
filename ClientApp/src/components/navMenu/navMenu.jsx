@@ -1,7 +1,7 @@
 import React from 'react';
-
 const NavMenu = () => {
     return(
+
     <div className="topnav">
     <a href="#">Home</a>
     <a href="#">Shop</a>
@@ -10,6 +10,7 @@ const NavMenu = () => {
     <a href="#" style={{"float":"right"}}>Register</a>
     <a href="#" style={{"float":"right"}}>Login</a>   
     </div>
+
     );
 
     
