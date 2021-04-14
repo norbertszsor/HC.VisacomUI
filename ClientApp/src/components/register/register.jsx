@@ -3,8 +3,9 @@ import './register.css';
 
 const Register = () => {
    return(
-    <form style={{"border":"1px solid #ccc"}}>
+    
         <div className="container">
+            <form style={{"border":"1px solid #ccc"}}>
             <h1>Sign Up</h1>
             <p>Please fill in this form to create an account.</p>
             <hr></hr>
@@ -25,11 +26,11 @@ const Register = () => {
             <p>By creating an account you agree to our <a href="#" style={{"color":"dodgerblue"}}>Terms and Privacy</a>.</p>
 
             <div className="clearfix">
-                <button type="button" className="cancelbtn">Cancel</button>
                 <button type="submit" className="signupbtn">Sign Up</button>
             </div>
+            </form>
         </div>
-    </form>
+  
    );
 }
 
