@@ -1,9 +1,14 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+import Faker from 'faker';
+import HomePage from './components/home/HomePage';
+
 
 const App = () => {
     return( 
-        <div>Hi there!</div>
+        <div>
+            <HomePage/>
+        </div>
     );
 };
 
