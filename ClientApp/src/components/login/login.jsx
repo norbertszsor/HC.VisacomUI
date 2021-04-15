@@ -6,7 +6,7 @@ const Login = () => {
     
         <div className="container">
             <form style={{"border":"1px solid #ccc"}}>
-            <h1>Sign Up</h1>
+            <h1>Sign In</h1>
             <label htmlFor="email"><b>Email</b></label>
             <input type="text" placeholder="Enter Email" name="email" required/>
 
@@ -16,7 +16,7 @@ const Login = () => {
                 <input type="checkbox" checked="checked" name="remember" style={{"marginBottom":"15px"}}/> Remember me
             </label>
             <div className="clearfix">
-                <button type="submit" className="signupbtn">Sign Up</button>
+                <button type="submit" className="signupbtn">Sign In</button>
             </div>
             </form>
         </div>
