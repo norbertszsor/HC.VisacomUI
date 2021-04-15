@@ -22,7 +22,7 @@ const App = () =>{
             </div>
 
             <div className="footer">
-                <h4>Footer</h4>
+                <h4>App Version, pre alpho 0.2</h4>
             </div>
 
 
