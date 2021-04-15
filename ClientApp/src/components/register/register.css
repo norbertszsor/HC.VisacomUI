@@ -53,6 +53,8 @@ button:hover {
 
 /* Add padding to container elements */
 .container {
+  margin-top: 1.5%;
+  background-color: white;
     width: 50%;
   padding: 16px;
 }

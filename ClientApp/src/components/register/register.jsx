@@ -5,7 +5,7 @@ const Register = () => {
    return(
     
         <div className="container">
-            <form style={{"border":"1px solid #ccc"}}>
+            <form>
             <h1>Sign Up</h1>
             <p>Please fill in this form to create an account.</p>
             <hr></hr>

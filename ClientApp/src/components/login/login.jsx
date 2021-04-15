@@ -5,7 +5,7 @@ const Login = () => {
    return(
     
         <div className="container">
-            <form style={{"border":"1px solid #ccc"}}>
+            <form>
             <h1>Sign In</h1>
             <label htmlFor="email"><b>Email</b></label>
             <input type="text" placeholder="Enter Email" name="email" required/>
