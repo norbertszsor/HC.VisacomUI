@@ -9,24 +9,22 @@ const App = () =>{
         
         <div>
             <div className="header">
-                <h1>OkiPlants</h1>
-                 
-            </div>       
+                <h1>OkiPlants</h1>              
+            </div>    
+
             <NavMenu />
 
             <div className="row">
                 <div className="leftcolumn">
-                <Routing/>
+                    <Routing/>
                 </div>
-               <RightBar/>
+                <RightBar/>
             </div>
 
             <div className="footer">
                 <h4>App Version, pre alpha 0.3</h4>
             </div>
-
-
-
+            
         </div>
     );
 }
