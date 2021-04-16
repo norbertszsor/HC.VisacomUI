@@ -9,9 +9,9 @@ const App = () =>{
         
         <div>
             <div className="header">
-                <h1>OkiPlants</h1>       
-            </div>
-
+                <h1>OkiPlants</h1>
+                 
+            </div>       
             <NavMenu />
 
             <div className="row">

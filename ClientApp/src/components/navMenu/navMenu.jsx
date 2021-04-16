@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from '../navMenu/Link';
+import './navMenu.css';
 const NavMenu = () => {
     return(
 
@@ -8,7 +9,8 @@ const NavMenu = () => {
             <Link href="/">Shop</Link>
             <Link href="/">Blog</Link>
             <Link href="/">Maps</Link>
-            <div style={{"float":"right"}}>
+            <input type="text" placeholder="Search.."></input>
+            <div className="topanvRight"style={{"float":"right"}}>
                 <Link href="/login" style={{"float":"right"}}>Login</Link> 
                 <Link href="/register" style={{"float":"right"}}>Register</Link>         
             </div>
