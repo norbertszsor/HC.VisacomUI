@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import './components/home/home.css';
 import NavMenu from './components/navMenu/NavMenu';
+import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
 import RightBar from './components/rightBar/RightBar';
 import Routing from './components/navMenu/Routing';
 
@@ -8,10 +10,7 @@ const App = () =>{
     return(
         
         <div>
-            <div className="header">
-                <h1>OkiPlants</h1>              
-            </div>    
-
+            <Header/>
             <NavMenu />
 
             <div className="row">
@@ -20,11 +19,8 @@ const App = () =>{
                 </div>
                 <RightBar/>
             </div>
-
-            <div className="footer">
-                <h4>App Version, pre alpha 0.3</h4>
-            </div>
             
+            <Footer/>
         </div>
     );
 }
