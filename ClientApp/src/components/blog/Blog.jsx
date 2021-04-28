@@ -1,9 +1,15 @@
-const ElementToReturn = () =>{
+import React from 'react';
+import blogCard from '../blogElements/BlogElements';
+
+const Blog = () =>{
     return(
         <div>
-
+            <blogCard/>
+            <blogCard/>
+            <blogCard/>
+            <blogCard/>
         </div>
     );
 }
 
-export default ElementToReturn;
+export default Blog;
