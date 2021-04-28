@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './components/home/home.css';
-import NavMenu from './components/navMenu/NavMenu';
+import NavMenu from './components/navMenu/navMenu';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import RightBar from './components/rightBar/RightBar';

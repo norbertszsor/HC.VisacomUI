@@ -1,7 +1,18 @@
+import React from "react";
+import ShopElement from "./ShopElement";
+import "./shop.css";
 const ElementToReturn = () =>{
     return(
-        <div>
-
+        <div className="ShopContainer">
+            <ShopElement/>
+            <ShopElement/>
+            <ShopElement/>
+            <ShopElement/>
+            <ShopElement/>
+            <ShopElement/>
+            <ShopElement/>
+            <ShopElement/>
+            <ShopElement/>
         </div>
     );
 }

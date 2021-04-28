@@ -1,8 +1,8 @@
-import Login from '../login/Login';
-import Register from '../register/Register';
+import Login from '../login/login';
+import Register from '../register/register';
 import Route from '../Route';
 import BlogElemets from '../blogElements/BlogElements';
-
+import Shop from '../shop/Shop'
 
 const Routing = () =>{
     return(
@@ -22,6 +22,9 @@ const Routing = () =>{
 
             <Route path="/register">
                 <Register/>
+            </Route>
+            <Route path="/shop">
+                <Shop/>
             </Route>
 
         </div>

@@ -1,0 +1,61 @@
+.ShopItem{
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  justify-self: center;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-bottom: 0.2%;
+  text-decoration: none;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+}
+.ShopItemPic{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 200px; 
+    overflow: hidden;
+}
+.ShopItemDiscription{
+
+    position:relative;
+    top: -200px;
+    opacity: 0;
+    background: linear-gradient(to bottom, transparent, rgb(5, 97, 92));
+    width: 200px;
+    height: 200px;
+    vertical-align: sub;
+
+}
+.ShopItemDiscription:hover{
+    animation-name: example;
+    animation-duration: 0.5s;
+    opacity: 1;
+}
+.ShopItemName{
+    position: relative;
+    top: 130px;
+    font-size: 24px;
+    font-style: italic;
+    text-transform: capitalize;
+}
+.ShopItemPrice{
+    position: relative;
+    top: 140px;
+
+}
+.ShopContainer{
+    width: 95%;
+}
+
+
+
+
+
+@keyframes example {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }

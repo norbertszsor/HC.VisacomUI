@@ -6,7 +6,7 @@ const NavMenu = () => {
 
     <div className="topnav">
             <Link href="/">Home</Link>
-            <Link href="/">Shop</Link>
+            <Link href="/shop">Shop</Link>
             <Link href="/">Blog</Link>
             <Link href="/">Maps</Link>
             <input type="text" placeholder="Search.."></input>
