@@ -3,6 +3,7 @@ import Register from '../register/register';
 import Route from '../Route';
 import BlogElemets from '../blogElements/BlogElements';
 import Shop from '../shop/Shop'
+import Blog from '../blog/Blog';
 
 const Routing = () =>{
     return(
@@ -14,6 +15,9 @@ const Routing = () =>{
 
             <Route path="/">
                 <BlogElemets/>
+            </Route>
+            <Route path="/blog">
+                <Blog/>
             </Route>
 
             <Route path="/login">
