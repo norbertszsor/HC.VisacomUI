@@ -6,10 +6,34 @@ import Footer from './components/footer/Footer';
 import RightBar from './components/rightBar/RightBar';
 import Routing from './components/navMenu/Routing';
 
-const App = () =>{
+
+  
+
+function componentDidMount (){
+    const apiUrl = "https://localhost:5001/api/account/register";
+    const requestOptions = {
+        method: 'POST',
+        headers: {"Host": "localhost:3000",'Content-Type': 'application/json' },
+        body: JSON.stringify({ 
+            "email": "test@gmail.com",
+            "password": "12345678",
+            "confirmPassword": "12345678",
+            "firstName": "Kuba",
+            "lastName": "JestNajlepszymProgramistą",
+            "phoneNumber": "12345678"
+    })
+    };
+    fetch(apiUrl, requestOptions)
+        .then(response => console.log(response));
+  }
+
+
+const App = () =>{    
+    
     return(
         
         <div>
+            <button onClick={componentDidMount()}>test</button>
             <Header/>
             <NavMenu />
 
