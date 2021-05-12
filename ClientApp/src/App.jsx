@@ -6,6 +6,7 @@ import Footer from './components/footer/Footer';
 import RightBar from './components/rightBar/RightBar';
 import Routing from './components/navMenu/Routing';
 
+
 const App = () =>{
     return(
         
