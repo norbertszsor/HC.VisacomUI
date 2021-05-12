@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from '../navMenu/Link';
+import ShopCart from '../shop/ShopCart';
 import './navMenu.css';
+
 const NavMenu = () => {
     return(
 
@@ -10,6 +12,7 @@ const NavMenu = () => {
             <Link href="/blog">Blog</Link>
 
             <Link href="/">Maps</Link>
+            <ShopCart></ShopCart>
 
             <input type="text" placeholder="Search.."></input>
             <div className="topanvRight"style={{"float":"right"}}>

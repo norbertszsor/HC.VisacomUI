@@ -13,6 +13,9 @@ const ElementToReturn = () =>{
             <ShopElement/>
             <ShopElement/>
             <ShopElement/>
+            <ShopElement/>
+            <ShopElement/>
+            <ShopElement/>
         </div>
     );
 }
