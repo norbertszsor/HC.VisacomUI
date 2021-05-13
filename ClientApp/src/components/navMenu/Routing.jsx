@@ -1,5 +1,5 @@
 import Login from '../login/login';
-import Register from '../register/register';
+import Register from '../register/Register';
 import Route from '../Route';
 import BlogElemets from '../blogElements/BlogElements';
 import Shop from '../shop/Shop'

@@ -13,6 +13,7 @@ const NavMenu = () => {
 
             <Link href="/">Maps</Link>
 
+
             <input type="text" placeholder="Search.."></input>
             <div className="topanvRight"style={{"float":"right"}}>
                 <Link href="/login" style={{"float":"right"}}>Login</Link> 

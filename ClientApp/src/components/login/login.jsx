@@ -27,7 +27,9 @@ const Login = () => {
             <input onChange={(e) => setEmail(e.target.value)} type="text" placeholder="Enter Email" name="email" required/>
 
             <label htmlFor="psw"><b>Password</b></label>
+
             <input onChange={(e) => setPassword(e.target.value)} type="password" placeholder="Enter Password" name="psw" required/>
+
             <div className="clearfix">
                 <button type="submit" className="signupbtn">Sign In</button>
             </div>
