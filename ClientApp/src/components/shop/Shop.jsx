@@ -43,17 +43,21 @@ export default class DataProductFetch extends React.Component{
             this.state.productData.forEach((element,index) => {
                 console.log(this.state.productData[index].name);
                 console.log(this.state.productData[index].price);
-                itemList.push(<li key = {index}>{ <ShopElement 
-                    plantImage={faker.image.nature()}
-                    plantName ={this.state.productData[index].name}
-                    plantPrice = {this.state.productData[index].price}                    
-                    />}</li>);
+                itemList.push(                 
+                        <ShopElement 
+                            plantImage={faker.image.nature()}
+                            plantName ={this.state.productData[index].name}
+                            plantPrice = {this.state.productData[index].price}                    
+                        />
+                    );
                 console.log(itemList);
                
             })}
-            <ul>
+            <div>
                 {itemList}
-            </ul>
+            </div>
+               
+            
 
             {console.log(this.state.productData)}
         </div>
