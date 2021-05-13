@@ -1,20 +1,33 @@
-import React from 'react';
+import React, { useState, Component } from 'react';
 import './login.css';
+import LoginRequest from '../../requests/LoginRequest';
+import { Redirect } from 'react-router-dom'
+import Cookies from 'universal-cookie';
+import {Route} from "react-router-dom";
 
 const Login = () => {
+    
+    const [token, setToken] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
+
+    const HandleSubmit = (event)=> {
+        event.preventDefault();
+        LoginRequest(setToken,email,password);
+        localStorage.setItem('Veryfi',token);
+        window.sessionStorage.setItem("key", token);
+      }
    return(
     
         <div className="container">
-            <form>
+            <form onSubmit={HandleSubmit}> 
             <h1>Sign In</h1>
             <label htmlFor="email"><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="email" required/>
+            <input onChange={(e) => setEmail(e.target.value)} type="text" placeholder="Enter Email" name="email" required/>
 
             <label htmlFor="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required/>
-            <label>
-                <input type="checkbox" checked="checked" name="remember" style={{"marginBottom":"15px"}}/> Remember me
-            </label>
+            <input onChange={(e) => setPassword(e.target.value)} type="password" placeholder="Enter Password" name="psw" required/>
             <div className="clearfix">
                 <button type="submit" className="signupbtn">Sign In</button>
             </div>
