@@ -1,17 +1,16 @@
 import React from "react";
-import Faker from 'faker';
 
-const ElementToReturn = () =>{
+
+const ElementToReturn = props =>{
     return(
-        <div className="ShopItem">
-
+        <div className="ShopItem" >           
             <div className="ShopItemPic">
-                <img src={Faker.image.nature()}/>
+                <img src={props.plantImage}/>
             </div>
-
+            
             <div className="ShopItemDiscription">
-                <div className="ShopItemName">{Faker.lorem.word()}</div>
-                <div className="ShopItemPrice">{Faker.commerce.price(5,100)}$</div>
+                <div className="ShopItemName">{props.plantName}</div>
+                <div className="ShopItemPrice">{props.plantPrice}$</div>
             </div>
         </div>
     );

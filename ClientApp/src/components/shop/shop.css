@@ -64,16 +64,16 @@
   cursor: pointer;
   opacity: 0.8;
   position: fixed;
-  bottom: 23px;
+  top: 23px;
   right: 28px;
-  width: 280px;
+  width: 10%;
 }
 
 /* The popup form - hidden by default */
 .form-popup {
   display: none;
   position: fixed;
-  bottom: 0;
+  top: 0;
   right: 15px;
   border: 3px solid #f1f1f1;
   z-index: 9;

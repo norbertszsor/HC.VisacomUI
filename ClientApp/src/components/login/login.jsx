@@ -11,7 +11,7 @@ const Login = () => {
             <input type="text" placeholder="Enter Email" name="email" required/>
 
             <label htmlFor="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required/>
+            <input type="password" placeholder="Wrong Password" name="psw" required/>
             <label>
                 <input type="checkbox" checked="checked" name="remember" style={{"marginBottom":"15px"}}/> Remember me
             </label>

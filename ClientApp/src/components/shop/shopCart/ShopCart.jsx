@@ -1,5 +1,5 @@
 import React from 'react';
-import './shop.css';
+import '../shop.css';
 
 function openForm(){
     document.getElementById("myForm").style.display = "block";
