@@ -11,7 +11,7 @@ import Routing from './components/navMenu/Routing';
 
 
 const App = () =>{    
-    const [key, setKey] = useState(localStorage.getItem('Veryfi'));
+   //const [key, setKey] = useState(localStorage.getItem('Veryfi'));
     
     return(
         

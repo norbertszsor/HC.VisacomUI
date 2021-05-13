@@ -4,6 +4,7 @@ import Route from '../Route';
 import BlogElemets from '../blogElements/BlogElements';
 import Shop from '../shop/Shop'
 
+
 const Routing = () =>{
     return(
         <div>
@@ -17,7 +18,7 @@ const Routing = () =>{
             </Route>
 
             <Route path="/login">
-                <Login/>
+            <Login/>
             </Route>
 
             <Route path="/register">

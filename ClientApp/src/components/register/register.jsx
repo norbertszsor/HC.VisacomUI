@@ -16,7 +16,6 @@ const Register = () => {
 
     function handleSubmit(event) {
         event.preventDefault();
-        console.log(email,password,confirmPassword,firstName,lastName,phoneNumber);
         RegisterRequest(email,password,confirmPassword,firstName,lastName,phoneNumber);
         
       }
