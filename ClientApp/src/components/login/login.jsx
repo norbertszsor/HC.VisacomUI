@@ -7,16 +7,14 @@ import {Route} from "react-router-dom";
 
 const Login = () => {
     
-    const [token, setToken] = useState("");
+
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
 
     const HandleSubmit = (event)=> {
         event.preventDefault();
-        LoginRequest(setToken,email,password);
-        localStorage.setItem('Veryfi',token);
-        window.sessionStorage.setItem("key", token);
+        LoginRequest(email,password);
       }
    return(
     

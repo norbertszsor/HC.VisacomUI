@@ -14,9 +14,9 @@ export default class DataProductFetch extends React.Component{
     async componentDidMount(){
         const requestOptions = {
             method: 'GET',
-            headers: {'Content-Type': 'application/json' }
+            headers: {'Content-Type': 'application/json','Access-Control-Allow-Origin':" *"  }
         }
-        const apiUrl = "https://localhost:5001/api/products";
+        const apiUrl = "https://okiplants.azurewebsites.net/api/products";
         const rensponse = await fetch(apiUrl,requestOptions);
         const data = await rensponse.json();
         

@@ -15,7 +15,13 @@ export default async function RegisterRequest (email,password,confirmPassword,fi
             )        
         };
        const resp= await fetch(apiUrl, requestOptions);
-       console.log(resp);
+       if (!resp.ok) {
+        window.alert("Coś Poszło nie tak");
+        }
+        else{
+            window.history.pushState({}, '', "/");
+            await window.location.reload(false);
+        }
        
             
     }

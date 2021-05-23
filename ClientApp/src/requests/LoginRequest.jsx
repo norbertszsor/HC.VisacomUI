@@ -1,19 +1,25 @@
 import React, { useState } from "react";
 
-export default async function LoginRequest (setToken,email,password){
+export default async function LoginRequest (email,password){
         const apiUrl = "https://localhost:5001/api/account/login";
         const requestOptions = {
             method: 'POST',
-            headers: {'Content-Type': 'application/json' }, 
+            headers: {'Content-Type': 'application/json'}, 
             body: JSON.stringify({
              "email": email,
             "password":password}
             )        
         };
+
        const resp= await fetch(apiUrl, requestOptions)
        const key = await resp.text();
-       setToken(key);
-       localStorage.setItem('Veryfi',key);
-       
-            
+       if (!resp.ok) {
+        window.alert("Złe Dane");
+        }
+        else{
+            await localStorage.setItem('Veryfi',key);
+            window.history.pushState({}, '', "/");
+            await window.location.reload(false);
+        }
+
     }

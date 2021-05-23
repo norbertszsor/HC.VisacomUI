@@ -1,13 +1,17 @@
+import React from 'react';
 import Login from '../login/login';
-import Register from '../register/Register';
+import Register from '../register/register';
 import Route from '../Route';
 import BlogElemets from '../blogElements/BlogElements';
 import Shop from '../shop/Shop'
 import Blog from '../blog/Blog';
 
 
-const Routing = () =>{
-    return(
+export default class Routing extends React.Component{
+    render(){
+    
+
+        return(
         <div>
 
             <Route path="">
@@ -34,7 +38,6 @@ const Routing = () =>{
 
         </div>
         
-    );
+    )
+    }
 }
-
-export default Routing;
