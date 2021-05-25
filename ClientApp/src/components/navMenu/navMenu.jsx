@@ -22,8 +22,11 @@ export default class NavMenu extends React.Component{
             <div onClick={Logout} className="topanvRight"style={{"float":"right"}}>
             <Link href="/">Logout</Link>        
             </div>
+            <div className="topanvRight"style={{"float":"right"}}>
+            <Link href="/CMS">CMS</Link>        
+            </div>
             <input type="text" placeholder="Search.."></input>            
-    </div>
+            </div>
          )   
         }
     return(
