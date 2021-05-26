@@ -28,22 +28,22 @@ const Register = () => {
             <hr></hr>
 
             <label htmlFor="email"><b>Email</b></label>
-            <input onChange={(e) => setEmail(e.target.value)} type="text" placeholder="Enter Email" name="email" required/>
+            <input onChange={(e) => setEmail(e.target.value)} className="RegisterInput" type="text" placeholder="Enter Email" name="email" required/>
 
             <label htmlFor="psw"><b>Password</b></label>
-            <input onChange={(e) => setPassword(e.target.value)} type="password" placeholder="Enter Password" name="psw" required/>
+            <input onChange={(e) => setPassword(e.target.value)} className="RegisterInput" type="password" placeholder="Enter Password" name="psw" required/>
 
             <label htmlFor="psw-repeat"><b>Repeat Password</b></label>
-            <input onChange={(e) => setconfirmPassword(e.target.value)} type="password" placeholder="Repeat Password" name="psw-repeat" required/>
+            <input onChange={(e) => setconfirmPassword(e.target.value)} className="RegisterInput" type="password" placeholder="Repeat Password" name="psw-repeat" required/>
 
             <label htmlFor="firstname"><b>First Name</b></label>
-            <input onChange={(e) => setfirstName(e.target.value)} type="text" placeholder="Enter First Name" name="firstname" required/>
+            <input onChange={(e) => setfirstName(e.target.value)} className="RegisterInput" type="text" placeholder="Enter First Name" name="firstname" required/>
             
             <label htmlFor="lastname"><b>Last Name</b></label>
-            <input onChange={(e) => setlastName(e.target.value)} type="text" placeholder="Enter Last Name" name="lastname" required/>
+            <input onChange={(e) => setlastName(e.target.value)} className="RegisterInput" type="text" placeholder="Enter Last Name" name="lastname" required/>
             
             <label htmlFor="PhoneNumber"><b>Phone Number</b></label>
-            <input onChange={(e) => setphoneNumber(e.target.value)} type="text" placeholder="Enter Phone Number" name="PhoneNumber" required/>
+            <input onChange={(e) => setphoneNumber(e.target.value)}  className="RegisterInput" type="text" placeholder="Enter Phone Number" name="PhoneNumber" required/>
 
             <label>
                 <input type="checkbox" checked="checked" name="remember" style={{"marginBottom":"15px"}}/> Remember me

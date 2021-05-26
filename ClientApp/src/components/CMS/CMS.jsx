@@ -10,15 +10,17 @@ export default class CMS extends React.Component{
     this.change = this.changeHandler.bind(this);
   }
   state = {
-    SelectedUrl: <ItemListing url={"api/account/manage/getusers"} />,
+    SelectedUrl: <ItemListing url={"api/account/"} />,
     }
     changeHandler = e =>{
       if(e.target.value=="Products"){
-        this.setState({SelectedUrl : <ItemListing url={"api/products"} />});}
+        this.setState({SelectedUrl : <ItemListing url={"api/products/"} />});}
       else if(e.target.value=="Users"){
-        this.setState({SelectedUrl : <ItemListing url={"api/account/manage/getusers"} />});}
+        this.setState({SelectedUrl : <ItemListing url={"api/account/"} />});}
         else if(e.target.value=="Orders"){
-          this.setState({SelectedUrl : <ItemListing url={"api/orders"} />});}          
+          this.setState({SelectedUrl : <ItemListing url={"api/orders/"} />});}
+          else if(e.target.value=="Blog"){
+            this.setState({SelectedUrl : <ItemListing url={"api/blog/"} />});}           
       else{
         this.setState({SelectedUrl : ""});}     
     }
@@ -34,7 +36,7 @@ export default class CMS extends React.Component{
         <option value="Blog">Blog Posts</option>
         </select>
       </form>
-        {this.state.SelectedUrl}    
+        {this.state.SelectedUrl}
     </div>
     );
     }

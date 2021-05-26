@@ -4,8 +4,7 @@ import ShopCart from '../shop/shopCart/ShopCart';
 const ElementToReturn = () =>{
     return(
         <div className="header">
-            <ShopCart></ShopCart>
-            <h1>Generic Plant Shop</h1>              
+            <ShopCart></ShopCart>            
         </div>   
     );
 }

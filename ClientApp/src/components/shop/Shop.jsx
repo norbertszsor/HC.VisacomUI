@@ -16,6 +16,7 @@ export default class DataProductFetch extends React.Component{
         return(
             
             <div className="ShopContainer">
+            Chwilowo testujemy CMS dlatego sklep nie działa z bazą
             {
             this.state.productData.forEach((element,index) => {
                 itemList.push(                 
