@@ -17,7 +17,10 @@ export default class NavMenu extends React.Component{
             <Link href="/">Home</Link>
             <Link href="/shop">Shop</Link>
             <Link href="/blog">Blog</Link>
-            <Link href="/map">Maps</Link> 
+            <Link href="/map">Maps</Link>
+            <div className="topanvRight"style={{"float":"right"}}>
+            <Link href="/CMS">CMS</Link>        
+            </div> 
             <div onClick={Logout} className="topanvRight"style={{"float":"right"}}>
             <Link href="/">Logout</Link>        
             </div>

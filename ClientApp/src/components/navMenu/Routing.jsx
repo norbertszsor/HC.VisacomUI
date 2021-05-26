@@ -5,7 +5,7 @@ import Route from '../Route';
 import BlogElemets from '../blogElements/BlogElements';
 import Shop from '../shop/Shop'
 import Blog from '../blog/Blog';
-
+import CMS from '../CMS/CMS';
 
 
 export default class Routing extends React.Component{
@@ -37,7 +37,9 @@ export default class Routing extends React.Component{
                 <Shop/>
             </Route>
 
-
+            <Route path="/CMS">
+                <CMS/>
+            </Route>
 
         </div>
         
