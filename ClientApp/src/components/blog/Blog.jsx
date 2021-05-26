@@ -1,13 +1,13 @@
 import React from 'react';
-import blogCard from '../blogElements/BlogElements';
+import BlogElements from '../blogElements/BlogElements';
 
 const Blog = () =>{
     return(
         <div>
-            <blogCard/>
-            <blogCard/>
-            <blogCard/>
-            <blogCard/>
+            <BlogElements/>
+            <BlogElements/>
+            <BlogElements/>
+            <BlogElements/>
         </div>
     );
 }

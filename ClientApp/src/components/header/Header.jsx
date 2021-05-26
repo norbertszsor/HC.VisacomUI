@@ -5,7 +5,7 @@ const ElementToReturn = () =>{
     return(
         <div className="header">
             <ShopCart></ShopCart>
-            <h1>OkiPlants</h1>              
+            <h1>Generic Plant Shop</h1>              
         </div>   
     );
 }

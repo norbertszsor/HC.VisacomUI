@@ -5,8 +5,7 @@ import Route from '../Route';
 import BlogElemets from '../blogElements/BlogElements';
 import Shop from '../shop/Shop'
 import Blog from '../blog/Blog';
-import CMS from '../CMS/CMS';
-
+import Map from '../maps/maps';
 
 export default class Routing extends React.Component{
     render(){
@@ -38,8 +37,8 @@ export default class Routing extends React.Component{
                 <Shop/>
             </Route>
 
-            <Route path="/CMS">
-                <CMS/>
+            <Route path="/map">
+                <Map/>
             </Route>
         </div>
         

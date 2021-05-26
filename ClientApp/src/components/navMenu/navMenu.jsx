@@ -17,13 +17,9 @@ export default class NavMenu extends React.Component{
             <Link href="/">Home</Link>
             <Link href="/shop">Shop</Link>
             <Link href="/blog">Blog</Link>
-            <Link href="/">Maps</Link>
- 
+            <Link href="/map">Maps</Link> 
             <div onClick={Logout} className="topanvRight"style={{"float":"right"}}>
             <Link href="/">Logout</Link>        
-            </div>
-            <div className="topanvRight"style={{"float":"right"}}>
-            <Link href="/CMS">CMS</Link>        
             </div>
             <input type="text" placeholder="Search.."></input>            
             </div>
@@ -34,7 +30,7 @@ export default class NavMenu extends React.Component{
             <Link href="/">Home</Link>
             <Link href="/shop">Shop</Link>
             <Link href="/blog">Blog</Link>
-            <Link href="/">Maps</Link>
+            <Link href="/map">Maps</Link>
             <input type="text" placeholder="Search.."></input>
             <div className="topanvRight"style={{"float":"right"}}>
                 <Link href="/login" style={{"float":"right"}}>Login</Link> 
