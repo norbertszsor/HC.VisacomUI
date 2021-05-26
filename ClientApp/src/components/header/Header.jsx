@@ -4,8 +4,7 @@ import ShopCart from '../shop/shopCart/ShopCart';
 const ElementToReturn = () =>{
     return(
         <div className="header">
-            <ShopCart></ShopCart>
-            <h1>OkiPlants</h1>              
+            <img className="headerImage" src="https://i.postimg.cc/tCykQ10j/Oki-Plants.png"/>              
         </div>   
     );
 }

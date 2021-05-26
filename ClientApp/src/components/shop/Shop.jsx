@@ -1,12 +1,12 @@
 import React from 'react';
 import faker from "faker";
 import ShopElement from "./ShopElement";
+import ShopCart from "./shopCart/ShopCart";
 import "./shop.css";
 
 
 export default class DataProductFetch extends React.Component{
-    
-    
+   
     state = {
        productData: null,
     }
@@ -14,19 +14,20 @@ export default class DataProductFetch extends React.Component{
     async componentDidMount(){
         const requestOptions = {
             method: 'GET',
-            headers: {'Content-Type': 'application/json' }
+            headers: {'Content-Type': 'application/json','Access-Control-Allow-Origin':" *"}
         }
-        const apiUrl = "https://localhost:5001/api/products";
+        const apiUrl = "https://okiplants.azurewebsites.net/api/products";
         const rensponse = await fetch(apiUrl,requestOptions);
         const data = await rensponse.json();
         
         this.setState({productData: JSON.parse(JSON.stringify(data))});
-        console.log(this.state.productData);
+        //console.log(this.state.productData);
     }
       
     render() {
         
         const itemList = [];
+        
         if(this.state.isLoading){
             return(<div>loading</div>);
         }
@@ -39,27 +40,27 @@ export default class DataProductFetch extends React.Component{
         return(
             
             <div className="ShopContainer">
+            <ShopCart />
             {
             this.state.productData.forEach((element,index) => {
-                console.log(this.state.productData[index].name);
-                console.log(this.state.productData[index].price);
+                //console.log(this.state.productData[index].name);
+                //console.log(this.state.productData[index].price);
                 itemList.push(                 
-                        <ShopElement 
-                            plantImage={faker.image.nature()}
+                        <ShopElement
+                            plantImage={this.state.productData[index].pictureURL}
                             plantName ={this.state.productData[index].name}
-                            plantPrice = {this.state.productData[index].price}                    
+                            plantPrice = {this.state.productData[index].price}
+                            plantStockInfo = {this.state.productData[index].amount}
+                            plantStory = {this.state.productData[index].description}                   
                         />
                     );
-                console.log(itemList);
+                //console.log(itemList);
                
             })}
             <div>
                 {itemList}
             </div>
-               
-            
 
-            {console.log(this.state.productData)}
         </div>
         )
     }
