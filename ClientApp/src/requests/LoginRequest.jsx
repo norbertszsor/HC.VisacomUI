@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 export default async function LoginRequest (email,password){
-        const apiUrl = "https://okiplants.azurewebsites.net/api/account/login";
+        const apiUrl = "https://localhost:5001/api/account/login";
         const requestOptions = {
             method: 'POST',
             headers: {'Content-Type': 'application/json'}, 

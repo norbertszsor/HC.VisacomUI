@@ -5,7 +5,8 @@ import Route from '../Route';
 import BlogElemets from '../blogElements/BlogElements';
 import Shop from '../shop/Shop'
 import Blog from '../blog/Blog';
-import Map from '../maps/maps';
+
+
 
 export default class Routing extends React.Component{
     render(){
@@ -32,14 +33,12 @@ export default class Routing extends React.Component{
             <Route path="/register">
                 <Register/>
             </Route>
-
             <Route path="/shop">
                 <Shop/>
             </Route>
 
-            <Route path="/map">
-                <Map/>
-            </Route>
+
+
         </div>
         
     )

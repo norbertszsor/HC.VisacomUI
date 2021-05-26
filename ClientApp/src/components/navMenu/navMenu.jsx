@@ -22,7 +22,7 @@ export default class NavMenu extends React.Component{
             <Link href="/">Logout</Link>        
             </div>
             <input type="text" placeholder="Search.."></input>            
-            </div>
+    </div>
          )   
         }
     return(
