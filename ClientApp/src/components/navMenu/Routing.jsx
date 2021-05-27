@@ -32,7 +32,7 @@ const Routing = () =>{
             <Route path="/shop">
                 <Shop/>
             </Route>
-            <Route patg="/checkout">
+            <Route path="/checkout">
                 <Checkout/>
             </Route>
 

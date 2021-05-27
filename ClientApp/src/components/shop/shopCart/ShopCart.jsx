@@ -1,5 +1,6 @@
 import React, { Component, useEffect, useState } from 'react';
 import ProductItem from './ProductItem';
+import Link from '../../navMenu/Link';
 import '../shop.css';
 
 function openForm(){
@@ -25,7 +26,7 @@ export default class ShopCartRender extends React.Component{
     handleClick = () =>{
         openForm();
         this.forceUpdate();
-    }   
+    }  
  
     render(){
         var cartData = JSON.parse(localStorage.getItem("cartData"));
@@ -54,7 +55,8 @@ export default class ShopCartRender extends React.Component{
                 <div className="form-popup" id="myForm">
                     <div className="form-container">
                     <h2>Your Cart</h2>
-                    {itemList}                 
+                    {itemList}
+                                    
                     <button className="btn" id="checkout button">Checkout</button>
                     <button className="btn cancel" id="cancelbutton" onClick={()=>closeForm()}>Close Preview</button>
                     </div>
