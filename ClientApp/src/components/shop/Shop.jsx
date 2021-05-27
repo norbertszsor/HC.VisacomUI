@@ -8,6 +8,7 @@ import "./shop.css";
 export default class DataProductFetch extends React.Component{
    
     state = {
+
        productData: null,
     }
     
@@ -55,6 +56,7 @@ export default class DataProductFetch extends React.Component{
                         />
                     );
                 //console.log(itemList);
+
                
             })}
             <div>

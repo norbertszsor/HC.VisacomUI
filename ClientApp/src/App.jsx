@@ -7,12 +7,14 @@ import RightBar from './components/rightBar/RightBar';
 import Routing from './components/navMenu/Routing';
 
 
+
 const App = () =>{
+
     return(
         
         <div>
             <Header/>
-            <NavMenu />
+            <NavMenu/>
 
             <div className="row">
                 <div className="leftcolumn">

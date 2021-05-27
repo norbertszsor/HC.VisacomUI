@@ -1,0 +1,137 @@
+.CMS_Listing{
+    background-color: rgb(179, 211, 211);
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    border: rgb(59, 70, 70) solid 3px;
+    overflow: auto;
+    max-height: 500px;
+}
+.CMS_Item{
+    background-color: rgb(113, 136, 145);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border: rgb(40, 96, 100) solid 3px;
+    overflow:auto;
+
+}
+.CMSedit{
+    background-color: rgb(83, 182, 207);
+    background-image: url(https://pl.seaicons.com/wp-content/uploads/2015/10/Pen-icon1.png);
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    float: right;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.CMSdelete{
+    background-color: rgb(243, 52, 52);
+    border-radius: 5px;
+    background-image: url(http://visacomhotchocolate.cba.pl/images/delete.png);
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+    float: right;
+    cursor: pointer;
+}
+#PopUp{
+    background-color: rgba(160, 188, 240, 0.712);
+    border-radius: 10px;
+    background-size: 25px 25px;
+    width: 500px;
+    height: auto;
+    position: absolute;
+    right: 40%;
+    top: 50%;
+    z-index: 10;
+    padding: 10px;
+    border: rgb(163, 255, 255) solid 3px;
+}
+#PopUpTitle{
+
+    font-size: 30px;
+    text-align: center;
+}
+.CMS_Label{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.CMS_input{
+    background-color: rgb(163, 171, 194);
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.CMS_input:focus{
+    background-color: rgb(210, 218, 241);
+}
+#Options{
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+}
+#CMS_Popup_Close{
+margin-top: 5px;
+float: right;
+width: 50%;
+padding: 10px;
+background-color: tomato;
+}
+#CMS_Popup_Send{
+float: right;
+width: 50%;
+padding: 10px;
+background-color: rgba(47, 255, 82, 0.726);
+margin-top: 5px;
+}
+
+#CMS_Popup_Close:hover{
+    background-color: rgb(240, 49, 49);
+    }
+#CMS_Popup_Send:hover{
+    background-color: rgb(47, 255, 64);
+    }
+.CMS_Add{
+    background-color: rgb(84, 236, 84);
+    width: 35px;
+    height: 35px;
+    position:relative;
+    left: 90%;
+    top: 3px;
+    float:left;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    border: rgb(59, 70, 70) solid 3px;
+    cursor: pointer;
+    background-image: url(https://www.iconninja.com/files/134/396/859/to-add-new-plus-create-icon.png);
+    background-size: 30px 30px;
+}
+.CMS_Refresh{
+    background-color: rgb(60, 87, 209);
+    width: 35px;
+    height: 35px;
+    position:relative;
+    left: 90%;
+    top: 3px;
+    margin-left: 5px;
+    float:left;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    border: rgb(59, 70, 70) solid 3px;
+    cursor: pointer;
+    background-image: url(https://www.pikpng.com/pngl/b/317-3173549_refresh-icon-png-refresh-icon-transparent-clipart.png);
+    background-size: 30px 25px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}

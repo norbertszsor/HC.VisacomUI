@@ -1,15 +1,16 @@
 import React from 'react';
 import Faker from 'faker';
 
-const BlogElements = () => {
+const BlogElements = props => {
     return (
 
         <div className="card">
-        <h2>{Faker.random.words(2)}</h2>
-        <h5>Blog element to show, May 1, 2021</h5>
-        <div className="fakeimg" style={{"height":"200px"}}>Image</div>
-        <p>{Faker.random.words(2)}</p>
-        <p>{Faker.random.words(30)}</p>
+        <h2>{props.data.title}</h2>
+        <h5>{props.data.author}</h5>
+        <div className="fakeimg" style={{"height":"200px",backgroundImage:`url(${props.data.mainPictureAdress})`}}>
+
+        </div>
+        <p>{props.data.description}</p>
         </div>
     
     );
