@@ -9,18 +9,43 @@ import CMS from '../CMS/CMS';
 
 
 export default class Routing extends React.Component{
-    render(){
     
+        
+    state = {
+        productData: null,
+     }
+
+
+    async componentDidMount(){
+        const requestOptions = {
+            method: 'GET',
+            headers: {'Content-Type': 'application/json','Access-Control-Allow-Origin':" *"}
+        }
+        const apiUrl = "https://okiplants.azurewebsites.net/api/blog";
+        const rensponse = await fetch(apiUrl,requestOptions);
+        const data = await rensponse.json();         
+        this.setState({productData: JSON.parse(JSON.stringify(data))});
+    }
+    render(){
+            const itemList = [];
+
+        
+        if(this.state.isLoading){
+          return(<div>loading</div>);
+      }
+      if(!this.state.productData){
+          return(<div></div>);
+      }
 
         return(
         <div>
 
             <Route path="">
-                <BlogElemets/>
+                <BlogElemets data={this.state.productData[0]}/>
             </Route>
 
             <Route path="/">
-                <BlogElemets/>
+                <BlogElemets data={this.state.productData[0]}/>
             </Route>
             <Route path="/blog">
                 <Blog/>
