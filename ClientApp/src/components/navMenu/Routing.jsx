@@ -6,6 +6,8 @@ import BlogElemets from '../blogElements/BlogElements';
 import Shop from '../shop/Shop'
 import Blog from '../blog/Blog';
 import CMS from '../CMS/CMS';
+import Checkout from '../shop/checkout/checkout'
+
 
 
 export default class Routing extends React.Component{
@@ -60,6 +62,9 @@ export default class Routing extends React.Component{
             </Route>
             <Route path="/shop">
                 <Shop/>
+            </Route>
+            <Route patg="/checkout">
+                <Checkout/>
             </Route>
 
             <Route path="/CMS">
