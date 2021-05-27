@@ -4,6 +4,7 @@ import Route from '../Route';
 import BlogElemets from '../blogElements/BlogElements';
 import Shop from '../shop/Shop'
 import Blog from '../blog/Blog';
+import Checkout from '../shop/checkout/checkout'
 
 
 const Routing = () =>{
@@ -30,6 +31,9 @@ const Routing = () =>{
             </Route>
             <Route path="/shop">
                 <Shop/>
+            </Route>
+            <Route patg="/checkout">
+                <Checkout/>
             </Route>
 
         </div>
