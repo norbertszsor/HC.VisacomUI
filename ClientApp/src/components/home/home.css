@@ -13,9 +13,6 @@
   
   /* Header/Blog Title */
   .header {
-    text-align: center;
-    background: white;
-    background-image: url(http://visacomhotchocolate.cba.pl/images/OkiPlants.png);
     background-repeat: no-repeat;
   }
   .headerImage{
