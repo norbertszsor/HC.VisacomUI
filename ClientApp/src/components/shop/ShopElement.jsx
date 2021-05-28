@@ -44,22 +44,21 @@ function addToCart(cartItemName,stockInfo,plantImgUrl){
 const ElementToReturn = props =>{
     return(
         
-        <div className="ShopItem">   
-                   
-            <div className="ShopItemPic">
-                <img src={props.plantImage}/>
+        <div className="ShopItem">  
+            <div className="ShopItemPicContainer">
+                <img className="ShopItemPic" src={props.plantImage}/>
+                
             </div>
-            
-            
-            <div className="ShopItemDiscription">
-            <div className="ShopItemName">{props.plantName}</div>
-            <div className="ShopItemStory">{props.plantStory}</div>             
-                <div className="ShopItemPrice">
-                    {props.plantPrice}$
-                    
-                </div>
-                <button className ="ShopAddBtn" onClick={() => addToCart(props.plantName,props.plantStockInfo,props.plantImage)}>Add To Cart</button>
+            <div className="contentHelper">
+                <div className="ShopItemName">{props.plantName}</div>   
+                <div className="ShopItemStory">{props.plantStory}</div>
+                <div className="ShopItemPrice">{props.plantPrice}$</div> 
+                
             </div>
+            <div className="ShopItemDiscription">             
+            <button className ="ShopAddBtn" onClick={() => addToCart(props.plantName,props.plantStockInfo,props.plantImage)}>Add To Cart</button>
+            </div>           
+            
         </div>
     );
 }

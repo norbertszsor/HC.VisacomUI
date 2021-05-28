@@ -1,6 +1,7 @@
 import { render } from '@testing-library/react';
 import React from 'react';
 import BlogElements from '../blogElements/BlogElements';
+import "../blog/blog.css";
 
 export default class Blog extends React.Component {
     

@@ -1,16 +1,19 @@
 import React from 'react';
 import Faker from 'faker';
-
+import "../blog/blog.css";
+//{props.data.mainPictureAdress}
 const BlogElements = props => {
     return (
 
-        <div className="card">
-        <h2>{props.data.title}</h2>
-        <h5>{props.data.author}</h5>
-        <div className="fakeimg" style={{"height":"200px",backgroundImage:`url(${props.data.mainPictureAdress})`}}>
-
-        </div>
-        <p>{props.data.description}</p>
+        <div className="cardBlog">
+            <h2>Title: {props.data.title}</h2>
+            <h5>Autor: {props.data.author}</h5>
+            <div className="fakeimgBlogContainer">
+                <img className="fakeimgBlog" src={props.data.mainPictureAdress}></img>
+            </div>
+            <div className="blogtxt">{props.data.description}
+            <button className="blogButton">Read More</button>
+            </div>
         </div>
     
     );

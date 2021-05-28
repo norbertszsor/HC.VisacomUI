@@ -1,5 +1,3 @@
-import { withCardon } from "cardon";
-import Modal from 'react-modal';
 import React, { Component } from "react";
 import EditRequest from "../../requests/Edit_Request"
 
