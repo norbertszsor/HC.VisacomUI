@@ -44,9 +44,18 @@ export default class RightBarFetch extends React.Component{
             <div className="rightcolumn">
             <div className="card">
                 <h3>Popular Plants</h3>
-                <div className="fakeimg"><img src={this.state.productData[21].pictureURL} alt="" className="PopularPlantsImg"/></div>
-                <div className="fakeimg"><img src={this.state.productData[13].pictureURL} alt="" className="PopularPlantsImg"/></div>
-                <div className="fakeimg"><img src={this.state.productData[19].pictureURL} alt="" className="PopularPlantsImg"/></div>
+                <div className="fakeimg">
+                    <div className="popularPlantsText">BestSeller !</div>
+                    <img src={this.state.productData[21].pictureURL} alt="" className="PopularPlantsImg"/>
+                </div>
+                <div className="fakeimg">
+                    <div className="popularPlantsText">BestSeller !</div>
+                    <img src={this.state.productData[13].pictureURL} alt="" className="PopularPlantsImg"/>
+                </div>
+                <div className="fakeimg">
+                    <div className="popularPlantsText">BestSeller !</div>
+                    <img src={this.state.productData[19].pictureURL} alt="" className="PopularPlantsImg"/>
+                </div>
             </div>
             <div className="card">
                 <h3>Contact Us</h3>

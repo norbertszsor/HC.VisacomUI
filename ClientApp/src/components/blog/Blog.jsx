@@ -26,18 +26,18 @@ export default class Blog extends React.Component {
         
         if(this.state.isLoading){
           return(<div>loading</div>);
-      }
-      if(!this.state.productData){
-          return(<div>object is null</div>);
-      }
-    return(
-        
-        <div>
-            {this.state.productData.forEach((element,index) => {
-            itemList.push(                 
-               <BlogElements data={this.state.productData[index]}/>
-                 )})}
-                  {itemList}
-        </div>
+        }
+        if(!this.state.productData){
+            return(<div>object is null</div>);
+        }
+        return(
+            
+            <div>
+                {this.state.productData.forEach((element,index) => {
+                itemList.push(                 
+                <BlogElements data={this.state.productData[index]}/>
+                    )})}
+                    {itemList}
+            </div>
     );}
 }
