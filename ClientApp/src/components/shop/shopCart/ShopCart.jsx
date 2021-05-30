@@ -30,7 +30,6 @@ export default class ShopCartRender extends React.Component{
  
     render(){
         var cartData = JSON.parse(localStorage.getItem("cartData"));
-        console.log("dziala");
         const itemList = [];
         
         if(cartData!=null){
@@ -41,6 +40,7 @@ export default class ShopCartRender extends React.Component{
                         quantity={element.quantity}
                         plantImage={element.imageUrl}
                         stockInfo ={element.itemStock}
+                        plantID = {element.plantID}
                         />
                 )
                 

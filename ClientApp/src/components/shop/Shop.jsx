@@ -52,7 +52,8 @@ export default class DataProductFetch extends React.Component{
                             plantName ={this.state.productData[index].name}
                             plantPrice = {this.state.productData[index].price}
                             plantStockInfo = {this.state.productData[index].amount}
-                            plantStory = {this.state.productData[index].description}                   
+                            plantStory = {this.state.productData[index].description}
+                            plantID = {this.state.productData[index].id}                   
                         />
                     );
                 //console.log(itemList);

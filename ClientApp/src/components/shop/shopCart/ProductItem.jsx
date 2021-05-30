@@ -5,11 +5,12 @@ import ElementToReturn from '../ShopElement';
 export default class ProductItemRender extends React.Component{
    
     state = {
+        id: this.props.plantID,
         plantImage: this.props.plantImage,
         itemName: this.props.itemName,
         quantity: this.props.quantity,
         itemStock: this.props.stockInfo,
-
+        
     }
    
     handleClickMinus = () =>{

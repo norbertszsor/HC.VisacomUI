@@ -24,8 +24,7 @@ export default class NavMenu extends React.Component{
             </div>
             <div className="topanvRight"style={{"float":"right"}}>
             <Link href="/CMS">CMS</Link>        
-            </div>  
-            <input type="text" className="RegisterInput" placeholder="Search.."></input>            
+            </div>         
     </div>
          )   
         }
