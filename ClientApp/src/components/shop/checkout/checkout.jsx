@@ -81,7 +81,7 @@ export default class ShopCartRender extends React.Component{
 
         <div className="checkoutContainer">
           <div>
-            {this.state.user}
+              <pre>{JSON.stringify(this.state.user)}</pre>
           </div>
           <button onClick={()=>this.handleClick(100)}>DodajTEST</button>
         </div>
