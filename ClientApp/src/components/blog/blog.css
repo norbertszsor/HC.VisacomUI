@@ -1,22 +1,30 @@
 .fakeimgBlog{
+    margin-right: 2%;
     display: flex;
     border: solid black 2px;
     border-radius: 20px;
     justify-content: center;
-    height: 200px;
-    width: 40%; 
+    height: 100px;
+    width: 20%; 
     overflow: hidden;
+    float: left;
+  }
+  .titleBlog{
+    background-color: rgb(202, 200, 200);
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: auto;
   }
   .fakeimgBlogContainer{
-  
+    width: 100%;
 
   }
   .blogtxt{
-    position:inherit;
-
-    position:relative;
+    font-size: 17px;
   }
   .cardBlog{
+    border: solid black 1px;
+    border-radius: 20px;
     background-color: white;
     padding: 20px;
     margin-top: 20px;
@@ -26,5 +34,5 @@
     padding: 10px;
     width: 10%;
     border-radius: 20px;
-    background-color: rgb(169, 228, 179);
+    background-color: #333;
   }
