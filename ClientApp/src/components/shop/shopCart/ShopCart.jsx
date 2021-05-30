@@ -26,7 +26,7 @@ export default class ShopCartRender extends React.Component{
     handleClick = () =>{
         openForm();
         this.forceUpdate();
-    }  
+    } 
  
     render(){
         var cartData = JSON.parse(localStorage.getItem("cartData"));
@@ -56,9 +56,12 @@ export default class ShopCartRender extends React.Component{
                     <div className="form-container">
                     <h2>Your Cart</h2>
                     {itemList}
+                    <div className="shopBtnContainer">
+                    <Link className= "linkbtn" href = "/checkout">Checkout</Link>
                                     
-                    <button className="btn" id="checkout button">Checkout</button>
                     <button className="btn cancel" id="cancelbutton" onClick={()=>closeForm()}>Close Preview</button>
+                    </div>
+                   
                     </div>
                 </div> 
             </div>

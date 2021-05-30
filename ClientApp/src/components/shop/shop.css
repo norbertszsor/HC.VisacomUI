@@ -135,6 +135,7 @@ position: absolute;
 
 /* Set a style for the submit/login button */
 .form-container .btn {
+  margin-top: 1%;
   background-color: #333;
   color: white;
   padding: 10px 15px;
@@ -144,6 +145,30 @@ position: absolute;
   margin-bottom:10px;
   opacity: 0.8;
   border-radius: 10px;
+}
+.linkbtn{
+  display: block;
+  margin-top: 1%;
+  background-color: #333;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  border-radius: 10px;
+  text-decoration: none;
+
+}
+.linkbtn:hover{
+  opacity: 1;
+} 
+.shopBtnContainer{
+  display: block;
+  width: 100%;
+  display: block;
+  overflow: hidden;
 }
 
 /* Add a red background color to the cancel button */
