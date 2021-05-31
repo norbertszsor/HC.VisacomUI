@@ -64,7 +64,6 @@ export default class NavMenu extends React.Component{
         {profileOptions}      
         </div>
         </div>)
-
         }
     }
         
