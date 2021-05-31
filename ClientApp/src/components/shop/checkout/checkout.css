@@ -1,0 +1,61 @@
+.checkoutContainer{
+    background-color: rgb(136, 132, 132);
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 5%;
+    border: solid black 1px;
+}
+.cartContainerItems{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    width: 80%;
+}
+
+.checkoutFormContainer{
+    padding: 5px;
+    text-align: center;
+    float: right;
+    background-color: white;
+    border-radius: 10px;
+    border: solid black 1px;
+    width: 30%;
+}
+.paymentCheckout{
+    margin-left: 5%;
+    float: left;
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    border: solid black 1px;
+    width: 30%;
+}
+
+.checkoutTxt{
+    font-size: 20px;
+}
+
+.checkoutInput{
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: rgb(107, 107, 107);
+}
+
+.checkoutCartContainer{
+    text-align: center;
+    float: left;
+    background-color: white;
+    border: solid black 1px;
+    width: 30%;
+    height: 200px;
+    overflow-y: scroll;
+}
+.checkoutBtn{
+    margin-top: 5%;
+    border-radius: 20px;
+    font-size: 20px;
+    width: 30%;
+    margin-left: 35%;
+}
