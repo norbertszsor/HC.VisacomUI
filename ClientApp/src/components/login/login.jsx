@@ -1,9 +1,7 @@
 import React, { useState, Component } from 'react';
 import './login.css';
 import LoginRequest from '../../requests/LoginRequest';
-import { Redirect } from 'react-router-dom'
-import Cookies from 'universal-cookie';
-import {Route} from "react-router-dom";
+
 
 const Login = () => {
     
