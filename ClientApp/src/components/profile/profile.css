@@ -1,0 +1,68 @@
+#ProfilePic{
+width: 150px;
+height: 150px;
+background-image: url(https://www.thephuketnews.com/photo/listing/2017/1512714016_1-org.jpg);
+background-repeat: no-repeat;
+background-size: 150px;
+border-radius: 50%;
+background-position: center;
+background-color: black; 
+}
+#ProfilePicContainer{
+    float: left;
+    border: black solid 1px;
+    padding: 5px;
+    margin: 5px;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    width: 160px;
+    height: 180px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+#ProfileInfo{
+    border: black solid 1px;
+    float: left;
+    background-color: #c2c2c2 ;
+    border-radius: 10px;
+    width: 75%;
+    margin: 10px;
+    margin-top: 20px;
+    padding-left: 2%;
+    padding-right: 15%;
+    padding-bottom: 2%;
+}
+#ProfileOrders{
+    background-color: rgb(51, 116, 112);
+}
+.ProfileInfoFloatie{
+    float: left;
+    padding-left: 5%;
+}
+.ProfileInfoFloatie2{
+    float: right;
+}
+.ProfileInfoFloatie3{
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 25px;
+    margin: 5px;
+}
+.ProfileInfoFloatie3:hover{
+    background-color: rgb(110, 110, 110);
+    background-image: url(http://download.seaicons.com/download/i96727/iconsmind/outline/iconsmind-outline-pen.ico);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: right;
+    cursor: pointer;
+}
+.ProfileContainer{
+    margin: 20px;
+    padding: 5px;
+    background-color: white;
+    width: 100%;
+    min-height: 200px;    
+}

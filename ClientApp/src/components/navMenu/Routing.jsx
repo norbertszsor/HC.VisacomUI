@@ -7,8 +7,8 @@ import Shop from '../shop/Shop'
 import Blog from '../blog/Blog';
 import CMS from '../CMS/CMS';
 import Checkout from '../shop/checkout/checkout'
-
-
+import Profile from '../profile/profile';
+import Map from "../maps/maps"
 
 export default class Routing extends React.Component{
     
@@ -53,6 +53,10 @@ export default class Routing extends React.Component{
                 <Blog/>
             </Route>
 
+            <Route path="/map">
+                <Map/>
+            </Route>
+
             <Route path="/login">
             <Login/>
             </Route>
@@ -65,6 +69,10 @@ export default class Routing extends React.Component{
             </Route>
             <Route path="/checkout">
                 <Checkout/>
+            </Route>
+
+            <Route path="/profile">
+                <Profile/>
             </Route>
 
             <Route path="/CMS">
