@@ -100,13 +100,18 @@ export default class ShopCartRender extends React.Component{
     }else{
       return(
         <div className="checkoutContainer">
-            <div className="checkoutCartContainer">
-                  <div className="checkoutTxt">Your Cart</div>
-                  <div className="cartContainerItems">
-                    {itemList}
-                  </div>                
-                  <div className="checkoutTxt">Sum Price: NULL$</div>
+            <div className="checkoutCartUnion">
+                <div className="checkoutTxt">Your Cart</div>
+                <div className="checkoutCartContainer">
+                      
+                      <div className="cartContainerItems">
+                        {itemList}
+                      </div>                
+                      
+                </div>
+                <div className="checkoutTxt">Sum Price: NULL$</div>
             </div>
+            
             <div className="checkoutFormContainer">
                   <div className="checkoutTxt">First Name</div>
                   <input type="text" className="checkoutInput"  value={this.state.user.firstName} readonly></input>
@@ -127,7 +132,7 @@ export default class ShopCartRender extends React.Component{
                   <div className="checkoutTxt">CVV</div>
                   <input type="text" className="checkoutInput"  placeholder="CVV: 000"></input>
             </div>           
-            <button className="checkoutBtn"onClick={()=>this.handleClick(4)}>Finalize your purchases</button>
+            <button className="checkoutBtn"onClick={()=>this.handleClick(4)}>Finalize</button>
           
         </div>
       )

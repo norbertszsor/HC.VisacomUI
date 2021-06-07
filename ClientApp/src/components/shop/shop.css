@@ -205,6 +205,10 @@ position: absolute;
   border: solid black 2px;
   border-radius: 5px;
 }
+.imgCartbutton{
+  height: 30px;
+  width: 30%;
+}
 
 
 
