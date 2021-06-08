@@ -43,7 +43,7 @@ export default class RightBarFetch extends React.Component{
             
             <div className="rightcolumn">
             <div className="card">
-                <h3>Popular Plants</h3>
+                <div className="popularTitle">Popular Plants</div>
                 <div className="fakeimg">
                     <div className="popularPlantsText">BestSeller !</div>
                     <img src={this.state.productData[21].pictureURL} alt="" className="PopularPlantsImg"/>

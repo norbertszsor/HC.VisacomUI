@@ -5,7 +5,7 @@ const ElementToReturn = () =>{
     return(
         <div className="header">
 
-            <img className="headerImage" src="https://i.postimg.cc/tCykQ10j/Oki-Plants.png"/>              
+            <img className="headerImage" src="https://cdn.discordapp.com/attachments/814473409832288300/848999554364080158/OkiPlants_10.png"/>              
 
         </div>   
     );

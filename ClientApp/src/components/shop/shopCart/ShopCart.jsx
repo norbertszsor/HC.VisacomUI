@@ -51,7 +51,11 @@ export default class ShopCartRender extends React.Component{
         
         return(
             <div>
-            <button className="open-button" onClick={this.handleClick}>Show Cart<img className="imgCartbutton"src="https://image.flaticon.com/icons/png/512/709/709640.png"/></button>
+            <button className="open-button" onClick={this.handleClick}>
+                <div className="buttonCartContainer">
+                    <div className="buttonCartText">Show Cart</div>
+                </div>
+            </button>
                 <div className="form-popup" id="myForm">
                     <div className="form-container">
                     <h2>Your Cart</h2>

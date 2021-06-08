@@ -54,7 +54,7 @@ const ElementToReturn = props =>{
             <div className="contentHelper">
                 <div className="ShopItemName">{props.plantName}</div>   
                 <div className="ShopItemStory">{props.plantStory}</div>
-                <div className="ShopItemPrice">{props.plantPrice}$</div> 
+                <div className="ShopItemPrice">Price: {props.plantPrice}$</div> 
                 
             </div>
             <div className="ShopItemDiscription">             
