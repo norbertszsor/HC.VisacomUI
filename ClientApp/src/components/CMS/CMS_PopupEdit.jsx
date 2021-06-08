@@ -13,7 +13,10 @@ const myChangeHandler=(event)=>{
 }
 
   const handleSubmit=(event)=>{
-    
+    if(props.url=="api/blog/"){
+      let date = new Date(Date.now());
+      FormValues["date"]= date;     
+    }
     let resutl =EditRequest(props.ListaVal[0],FormValues,props.url)
     console.log(JSON.stringify(FormValues));
     if(resutl){

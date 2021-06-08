@@ -1,3 +1,4 @@
+import { date } from "faker";
 import React, { Component } from "react";
 import AddRequest from "../../requests/Add_Request"
 
@@ -19,7 +20,11 @@ const myChangeHandler=(event)=>{
   const handleSubmit=(event)=>{
     delete FormValues[props.ListaKey[0]];
     delete FormValues["roleName"];
-      if(props.url=="api/account/"){FormValues["password"]="12345678";} 
+      if(props.url=="api/account/"){FormValues["password"]="12345678";}
+      if(props.url=="api/blog/"){
+        let date = new Date(Date.now());
+        FormValues["date"]= date;     
+      } 
     console.log(FormValues);
     let resutl =AddRequest(FormValues,props.url);
     if(resutl){

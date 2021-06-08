@@ -1,23 +1,35 @@
 import React from 'react';
 import Faker from 'faker';
 import "../blog/blog.css";
-//{props.data.mainPictureAdress}
+const ReadMore=()=>{
+    var itemlist=[{height:"auto"},{display: "none"},{display: "none",height:"0px"},{height:"auto",top:"0"}];
+return itemlist;
+}
+const ReadLess=()=>{
+    var itemlist=[{height:"350px"},{display: "block"},{display: "block",height:"150px"},{height:"200px",top:"-100px"}];
+return itemlist;
+}
 const BlogElements = props => {
+    const [styl,setStyl]=React.useState([{},{},{},{}]);
     return (
-
-        <div className="cardBlog">
-            <h2 className="titleBlog">Title: {props.data.title}</h2>
-            <h5>Autor: {props.data.author}</h5>
-            <div className="fakeimgBlogContainer">
-                <img className="fakeimgBlog" src={props.data.mainPictureAdress}></img>
-                <div className="blogtxt">{props.data.description}
-                
-                </div>
+        
+        <div className="cardBlog" style={styl[0]}>
+            <div className="blogimgFade" style={styl[1]}><div className="blogDate">{props.data.date}</div></div>
+            <div className="fakeimgBlogContainer" style={{ backgroundImage :`url(${props.data.mainPictureAdress})`}}>
             </div>
-            <button className="blogButton">Read More</button>
+            <div className="blogButton" style={styl[1]} onClick={()=>setStyl(ReadMore())}>Read More</div>
+
+    
+            <div className="blogtxt" style={styl[3]}>
+            <h2 className="titleBlog" >{props.data.title}</h2>
+            <h5>Autor: {props.data.author}</h5>
+                {props.data.description.split('\\n').map(str => <p>{str}</p>)}
+            </div>
+            <div className="blogButton2" onClick={()=>setStyl(ReadLess())}>Show Less</div>
             
-           
-            
+
+            <div className="blogFade" style={styl[2]}>
+            </div>
         </div>
     
     );
