@@ -141,7 +141,7 @@ export default class ShopCartRender extends React.Component{
       return(<div>loading</div>);
     }
     if(!this.state.user){
-      return(<div>retriving data form server</div>);
+      return(<div>u should be loged in</div>);
     }
     if(!this.state.userAddresses){
       return(<div>retriving data form server</div>);
@@ -395,4 +395,5 @@ export default class ShopCartRender extends React.Component{
       }
     }
   }
+
 }

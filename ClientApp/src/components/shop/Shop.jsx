@@ -30,7 +30,7 @@ export default class DataProductFetch extends React.Component{
     
     handeGroupBy = e =>{
         if(e.target.value!=null){
-            this.setState({groupBy: e.target.value},this.componentDidMount);        
+            this.setState({groupBy: e.target.value},this.componentDidMount);      
         }
       }
     handeSortDirection = e =>{
