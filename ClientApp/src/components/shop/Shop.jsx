@@ -33,7 +33,7 @@ export default class DataProductFetch extends React.Component{
             return(<div>loading</div>);
         }
         if(!this.state.productData){
-            return(<div>object is null</div>);
+            return(<div>retriving data from server</div>);
         }
         if(this.state.productData){
             

@@ -2,7 +2,7 @@ import React from "react";
 import ShopCart from "./shopCart/ShopCart";
 
 
-function addToCart(cartItemName,stockInfo,plantImgUrl,plantID){
+function addToCart(cartItemName,stockInfo,plantImgUrl,plantID,plantPrice){
     var checker = 0;
     var cartData = [
         {
@@ -11,6 +11,7 @@ function addToCart(cartItemName,stockInfo,plantImgUrl,plantID){
             itemStock: stockInfo,
             imageUrl: plantImgUrl,
             id: plantID,
+            price: plantPrice
         }
     ];
     if(localStorage.getItem("cartData")==null){
@@ -34,6 +35,7 @@ function addToCart(cartItemName,stockInfo,plantImgUrl,plantID){
                 itemStock: stockInfo,
                 imageUrl: plantImgUrl,
                 id: plantID,
+                price: plantPrice,
             });
         }
         localStorage.setItem("cartData",JSON.stringify(cartData));
@@ -58,7 +60,7 @@ const ElementToReturn = props =>{
                 
             </div>
             <div className="ShopItemDiscription">             
-            <button className ="ShopAddBtn" onClick={() => addToCart(props.plantName,props.plantStockInfo,props.plantImage,props.plantID)}>Add To Cart</button>
+            <button className ="ShopAddBtn" onClick={() => addToCart(props.plantName,props.plantStockInfo,props.plantImage,props.plantID,props.plantPrice)}>Add To Cart</button>
             </div>           
             
         </div>
