@@ -47,6 +47,7 @@ export default class CMSListing extends React.Component{
          const rensponse = await fetch(apiUrl,requestOptions);
          const data = await rensponse.json();         
          this.setState({productData: JSON.parse(JSON.stringify(data))});
+         console.log(rensponse);
      }
      render(){
 

@@ -12,7 +12,7 @@ background-color: black;
     float: left;
     border: black solid 1px;
     padding: 5px;
-    margin: 5px;
+    margin: 10px;
     background-color: #d9d9d9;
     border-radius: 10px;
     width: 160px;
@@ -24,7 +24,7 @@ background-color: black;
 #ProfileInfo{
     border: black solid 1px;
     float: left;
-    background-color: #c2c2c2 ;
+    background-color: #d9d9d9 ;
     border-radius: 10px;
     width: 75%;
     margin: 10px;
@@ -32,9 +32,6 @@ background-color: black;
     padding-left: 2%;
     padding-right: 15%;
     padding-bottom: 2%;
-}
-#ProfileOrders{
-    background-color: rgb(51, 116, 112);
 }
 .ProfileInfoFloatie{
     float: left;
@@ -61,8 +58,139 @@ background-color: black;
 }
 .ProfileContainer{
     margin: 20px;
-    padding: 5px;
     background-color: white;
     width: 100%;
     min-height: 200px;    
 }
+.ProfileOrderCont{
+    padding-top: 10px;
+}
+.ProfileOrderStatus{
+font-size: 20px;
+font-weight: bold;
+}
+.ProfileProducts{
+    padding-left: 5px;
+    padding-top: 5px;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+.ProfileOrderTotalCost{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+.ProfileOrderCont{
+    border-radius: 10px;
+    margin: 5px;;
+    padding: 5px;
+    border: black solid 1px;
+    background-color: white;
+}
+.ProfileOrdersNapis{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 5px;
+}
+.ProfileOrders{
+
+    float: left;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    
+}
+.ProfileOrdersBorders{
+    width: 95%;
+    overflow: scroll;
+    max-height: 500px;
+    border-radius: 10px;
+    border: black 1px solid;
+    padding: 5px;
+    background-color: #d9d9d9;
+}
+.PoPUpContainer{
+
+    position: fixed;
+    top: 200px;
+    left: 30%;
+    background-color: #d9d9d9;
+    border: 1px black solid;
+    border-radius: 10px;
+    width: 400px;
+
+}
+.Edit_input{
+    float: left;
+    width: 95%;
+    
+    text-align: center;
+    margin: 2.5%;
+    
+}
+.ProfilePopUpButton{
+    width: 50%;
+    background-color: #333;
+    opacity: 1;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.ProfilePopUpButton:hover{
+background-color: #d9d9d9;
+color: black;
+cursor: pointer;
+}
+.ProfilePopUpLabel{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #d9d9d9;
+}
+.ProfilePopUpButtonAdd{
+ background-color: #333;
+ font-size: 25px;
+ color: white;
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ text-align:center;
+ margin-left: 45%;
+ margin-top: 5px;
+ margin-bottom: 5px;
+ cursor: pointer;
+}
+.AdressContainer{
+    height: 40px;
+    padding: 5px;
+    border: 1px solid black;
+    margin-top: 5px;
+    background-color: white;
+    width: 95%;
+    margin-left: 2.5%;
+    border-radius: 5px;
+}
+.ProfilePopUpButtonDelete{
+    background-color: #333;
+    font-size: 25px;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+}
+.ProfilePopUpButtonAdd:hover{
+    background-color: #8b8b8b;
+    color: #000;
+}
+.ProfilePopUpButtonDelete:hover{
+    background-color: #d9d9d9;
+    color: #000;
+}
+

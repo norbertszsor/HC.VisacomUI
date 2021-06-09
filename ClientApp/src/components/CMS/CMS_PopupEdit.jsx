@@ -8,9 +8,17 @@ if(!props.show){
 const FormValues={};
 
 const myChangeHandler=(event)=>{
-  FormValues[event.target.name]=event.target.value
-  FormValues[props.ListaKey[0]]=props.ListaVal[0]
-}
+  if (props.url=="api/orders/"){
+    FormValues["statusId"]=parseInt(event.target.value)
+    }
+    else{
+      
+      FormValues[event.target.name]=event.target.value
+      FormValues[props.ListaKey[0]]=props.ListaVal[0]
+    }
+
+
+  }
 
   const handleSubmit=(event)=>{
     if(props.url=="api/blog/"){
@@ -29,8 +37,10 @@ const myChangeHandler=(event)=>{
 
   const lista=[];
   if(props.ListaKey){
+    
     props.ListaKey.forEach((element,index) => {
-      FormValues[element]=props.ListaVal[index];
+      if (props.url!="api/orders/"){
+      FormValues[element]=props.ListaVal[index];}
       lista.push(
         <div>
         <label className="CMS_Label">{element}</label>

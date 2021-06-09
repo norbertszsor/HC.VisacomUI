@@ -23,7 +23,7 @@ export default class NavMenu extends React.Component{
          const rensponse = await fetch(apiUrl,requestOptions);
          const data = await rensponse.json();
          this.setState({UserData: JSON.parse(JSON.stringify(data))});
-         console.log(this.state.UserData);
+         localStorage.setItem('Role',this.state.UserData.role);
      }
        
 

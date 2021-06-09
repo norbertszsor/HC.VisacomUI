@@ -3,6 +3,7 @@ import './CMS.css';
 import CMSItem from './CMS_item';
 import ItemListing from'./Item_Listing';
 
+
 export default class CMS extends React.Component{
   
   constructor(props) {
@@ -24,16 +25,35 @@ export default class CMS extends React.Component{
       else{
         this.setState({SelectedUrl : ""});}     
     }
+
+
     render(){
+      
+      var options = [
+        <option value='Users'>Users</option>,
+        <option value='Products'>Products</option>,
+        <option value='Blog'>Blog</option>,
+        <option value='Orders'>Orders</option>
+      ]
+      
+      if(localStorage.getItem("Role")=="Blogger"){
+        options = [
+          <option value=''></option>,
+          <option value='Blog'>Blog</option>]
+      }
+      if(localStorage.getItem("Role")=="Warehouseman"){
+        options = [
+          <option value=''></option>,
+          <option value='Products'>Products</option>,
+          <option value='Orders'>Orders</option>]
+      }
+
     return(  
     <div style={{"padding":"15px"}}>  
     <form>
     <label for="Options">Wybierz:</label>
         <select name="Options" onChange={this.changeHandler} id="Options">
-        <option value="Users">Users</option>
-        <option value="Products">Products</option>
-        <option value="Orders">Orders</option>
-        <option value="Blog">Blog Posts</option>
+          {options}
         </select>
       </form>
         {this.state.SelectedUrl}
