@@ -51,7 +51,7 @@ const ElementToReturn = props =>{
         <div className="ShopItem">  
             <div className="ShopItemPicContainer">
                 <img className="ShopItemPic" src={props.plantImage}/>
-                
+                <div className="StocInfo">Left in Stock: {props.plantStockInfo}</div>
             </div>
             <div className="contentHelper">
                 <div className="ShopItemName">{props.plantName}</div>   

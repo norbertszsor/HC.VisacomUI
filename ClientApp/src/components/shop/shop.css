@@ -23,12 +23,25 @@
   width: 20%;
   overflow: hidden;
   float: left;
+  position: relative;
+  text-align: center;
 }
 .ShopItemPic{
     border-radius: 20px;
     height: 200px;
     width: 230px;
     float:left;
+}
+.StocInfo{
+  opacity: 0.9;
+  border-radius: 10px;
+  padding: 3px;
+  color: rgb(230, 230, 230);
+  background-color: #333;
+  position: absolute;
+  bottom: 8px;
+  left: 13px;
+  
 }
 .ShopItemDiscription{
   margin-top: 5%;
@@ -94,6 +107,35 @@
     animation-name: example;
     animation-duration: 0.5s;
     opacity: 1;
+}
+.selectShopContainer{
+  padding: 5px;
+  font-size: 17px;
+  margin-left: 2.5%;
+}
+.selectSearchInput{
+  text-align: center;
+  font-size: 15px;
+  margin-right: 1%;
+}
+.selectSearch{
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: #333;
+  opacity: 0.9;
+  color: rgb(230, 230, 230);
+}
+.selectShopOption{
+  padding: 5px;
+  border: 0px;
+  opacity: 0.9;
+  border-radius: 0px;
+  background-color: #333;
+  color: rgb(230, 230, 230);
 }
 
 
