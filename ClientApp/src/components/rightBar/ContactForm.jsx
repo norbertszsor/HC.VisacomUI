@@ -2,9 +2,10 @@ import React from 'react';
 import './contactForm.css';
 
 const ContactForm = () =>{
+   
     return(
         <div className="contactConteiner">
-        <form action="action_page.php">
+        <form>
       
           <label for="fname">Nick</label>
           <input type="text" className="Contact_Input" id="fname" name="firstname" placeholder="Your nick name.."></input>
@@ -24,7 +25,10 @@ const ContactForm = () =>{
           <label for="subject">Description</label>
           <textarea id="subject" className="Contact_Input" name="subject" placeholder="Write something.." style={{"height":"200px"}}></textarea>
       
-          <input type="submit" className="Contact_InputS" value="Submit"></input>
+         <input type="button" onClick={(e) => {
+                window.location = "mailto:no-reply@example.com";
+                e.preventDefault();
+            }} className="Contact_InputS" value="Submit"></input>
       
         </form>
       </div> 
