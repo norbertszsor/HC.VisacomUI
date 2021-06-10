@@ -2,7 +2,7 @@
 
 .ShopItem{
   background-color: rgb(255, 255, 255);
-  border-radius: 20px;
+  border-radius: 15px;
   text-align: center;
   justify-self: center;
   margin-top: 2%;
@@ -34,14 +34,23 @@
 }
 .StocInfo{
   opacity: 0.9;
-  border-radius: 10px;
+  border-radius: 0px;
   padding: 3px;
   color: rgb(230, 230, 230);
   background-color: #333;
   position: absolute;
-  bottom: 8px;
-  left: 13px;
+  bottom: 0px;
+  left: 0px;
   
+}
+.RatingInfo{
+  top:0px;
+  left:0px;
+  color: rgb(230, 230, 230);
+  padding: 2px;
+  opacity: 0.9;
+  position: absolute;
+  background-color: rgb(243, 75, 75);
 }
 .ShopItemDiscription{
   margin-top: 5%;
