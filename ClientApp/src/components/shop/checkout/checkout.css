@@ -1,7 +1,9 @@
 .checkoutContainer{
-    background-color: rgb(136, 132, 132);
+    border-radius: 15px;
+    background-color: white;
+    width: 80%;
+    margin-left: 10%;
     padding: 30px;
-    border-radius: 10px;
     margin-top: 5%;
     border: solid black 1px;
 }
@@ -13,49 +15,207 @@
 }
 
 .checkoutFormContainer{
-    padding: 5px;
+    margin: auto;
+    border-radius: 15px;
+    padding: 10px;
     text-align: center;
-    float: right;
     background-color: white;
-    border-radius: 10px;
     border: solid black 1px;
-    width: 30%;
+    width: 400px;
+}
+.checkoutInputMark{
+    font-size: 20px;
+    font-style: italic;
+    background-color: rgb(145, 143, 143);
+    padding: 5px;
+    color: rgb(230,230,230);
+
 }
 .paymentCheckout{
-    margin-left: 5%;
-    float: left;
-    padding: 5px;
+    background-color: rgb(230,230,230);
+    border-radius: 15px;
+    margin: auto;
+    padding: 10px;
     text-align: center;
     background-color: white;
-    border-radius: 10px;
     border: solid black 1px;
-    width: 30%;
+    width: 400px;
 }
 
 .checkoutTxt{
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .checkoutInput{
+    border-radius: 15px;
     padding: 5px;
     font-size: 20px;
-    border-radius: 10px;
-    background-color: rgb(107, 107, 107);
+    background-color: rgb(250, 243, 243);
+    text-align: center;
 }
 
 .checkoutCartContainer{
     text-align: center;
-    float: left;
-    background-color: white;
-    border: solid black 1px;
-    width: 30%;
-    height: 200px;
+    background-color:rgb(230,230,230);
+    width: 250px;
+    
+    margin:auto;
+    height: 300px;
     overflow-y: scroll;
 }
-.checkoutBtn{
-    margin-top: 5%;
-    border-radius: 20px;
-    font-size: 20px;
-    width: 30%;
-    margin-left: 35%;
+.checkoutCartUnion{
+    padding: 15px;
+    border: solid 1px black;
+    border-radius: 15px;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+  
+    width: 400px;
 }
+.checkoutTxtCart{
+    font-size: 20px;
+    background-color: #333;
+    color: rgb(230,230,230);
+    opacity: 0.9;
+    border-radius: 15px;
+    padding: 5px;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+.checkoutBtnContainer{
+    margin: auto;
+}
+.checkoutBtn{
+    border-radius: 15px;
+    font-size: 15px;
+}
+.cardsIMGcheckout{
+    border-radius: 15px;
+    height: 70px;
+    width: 300px;
+}
+.personalIMGcheckout{
+    border-radius: 15px;
+    height: 100px;
+    width: 100px;
+}
+.checkoutStepInfo{
+    margin-bottom: 2%;
+    background-color: #333;
+    padding: 5px;
+    font-size: 20px;
+    color: rgb(230,230,230);
+    border-radius: 15px;
+    text-align: center;
+}
+table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/* payment Window */
+ /* The Modal (background) */
+ .modal {
+    display: block;
+    text-align: center;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .closeSpan {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .closeSpan:hover,
+  .closeSpan:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modalText{
+    font-size: 20px;
+    background-color: #333;
+    color: rgb(230,230,230);
+    padding: 5px;
+  }
+  .modalImgStart{
+    margin-top: 0.3%;
+    height: 200px;
+    border-radius: 5px;
+  }
+  .modalImgEnd{
+    margin: auto;
+    margin-top: 0.3%;
+    height: 200px;
+    border-radius: 5px;
+  }
+  .checkoutBtnModal{
+    font-size: 20px;
+
+    background-color: rgb(224, 89, 89);
+    width: 40%;
+    margin-left: 30%;
+  }
+  .checkoutBtnPreviusModal{
+    width: 40%;
+    margin-left: 30%;
+    border-radius: 15px;
+  }
+  .checkoutBye{
+      font-size: 40px;
+      margin: auto;
+      width: 400px;
+      height: 200px;
+      text-align: center;
+  }
+  .checkoutByeTitle{
+   
+  }
+  .linkbtnCheckout{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 2%;
+    display: block;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: rgb(53, 85, 45);
+    color: rgb(230,230,230);
+    text-decoration: none;
+    opacity: 0.9;
+  }
+  .linkbtnCheckout:hover{
+    opacity: 1;
+    background-color: #333;
+  } 

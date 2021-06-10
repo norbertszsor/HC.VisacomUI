@@ -31,7 +31,7 @@ export default class Blog extends React.Component {
           return(<div>loading</div>);
         }
         if(!this.state.productData){
-            return(<div>object is null</div>);
+            return(<div>retriving data from server</div>);
         }
         return(
             

@@ -31,6 +31,7 @@ export default class ShopCartRender extends React.Component{
     render(){
         var cartData = JSON.parse(localStorage.getItem("cartData"));
         const itemList = [];
+        var sumPrice = 0;
         
         if(cartData!=null){
             cartData.forEach((element,index) =>{
@@ -47,21 +48,28 @@ export default class ShopCartRender extends React.Component{
     
             });
         }
-       
+        if(cartData!=null){
+            cartData.forEach((element,index) =>{
+                sumPrice = sumPrice+Number(element.price)*Number(element.quantity);
+            });
+        }
         
         return(
             <div>
-            <button className="open-button" onClick={this.handleClick}>Show Cart</button>
+            <button className="open-button" onClick={this.handleClick}>
+                <div className="buttonCartContainer">
+                    <div className="buttonCartText">Show Cart</div>
+                </div>
+            </button>
                 <div className="form-popup" id="myForm">
                     <div className="form-container">
-                    <h2>Your Cart</h2>
-                    {itemList}
-                    <div className="shopBtnContainer">
-                    <Link className= "linkbtn" href = "/checkout">Checkout</Link>
-                                    
-                    <button className="btn cancel" id="cancelbutton" onClick={()=>closeForm()}>Close Preview</button>
-                    </div>
-                   
+                        <h2>Your Cart</h2>
+                        {itemList}
+                        <div className="shopBtnContainer">
+                            <Link className= "linkbtn" href = "/checkout">Checkout</Link>                                       
+                            <button className="btn cancel" id="cancelbutton" onClick={()=>closeForm()}>Close Preview</button>
+                        </div>
+                        <h2>To Pay: {sumPrice} $</h2>
                     </div>
                 </div> 
             </div>

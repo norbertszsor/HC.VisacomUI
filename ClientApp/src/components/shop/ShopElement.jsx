@@ -2,7 +2,7 @@ import React from "react";
 import ShopCart from "./shopCart/ShopCart";
 
 
-function addToCart(cartItemName,stockInfo,plantImgUrl,plantID){
+function addToCart(cartItemName,stockInfo,plantImgUrl,plantID,plantPrice){
     var checker = 0;
     var cartData = [
         {
@@ -11,6 +11,7 @@ function addToCart(cartItemName,stockInfo,plantImgUrl,plantID){
             itemStock: stockInfo,
             imageUrl: plantImgUrl,
             id: plantID,
+            price: plantPrice
         }
     ];
     if(localStorage.getItem("cartData")==null){
@@ -34,6 +35,7 @@ function addToCart(cartItemName,stockInfo,plantImgUrl,plantID){
                 itemStock: stockInfo,
                 imageUrl: plantImgUrl,
                 id: plantID,
+                price: plantPrice,
             });
         }
         localStorage.setItem("cartData",JSON.stringify(cartData));
@@ -49,16 +51,17 @@ const ElementToReturn = props =>{
         <div className="ShopItem">  
             <div className="ShopItemPicContainer">
                 <img className="ShopItemPic" src={props.plantImage}/>
-                
+                <div className="StocInfo">Left in Stock: {props.plantStockInfo}</div>
+                <div className="RatingInfo">Rating {props.plantRating}/5</div>
             </div>
             <div className="contentHelper">
                 <div className="ShopItemName">{props.plantName}</div>   
                 <div className="ShopItemStory">{props.plantStory}</div>
-                <div className="ShopItemPrice">{props.plantPrice}$</div> 
+                <div className="ShopItemPrice">Price: {props.plantPrice}$</div> 
                 
             </div>
             <div className="ShopItemDiscription">             
-            <button className ="ShopAddBtn" onClick={() => addToCart(props.plantName,props.plantStockInfo,props.plantImage,props.plantID)}>Add To Cart</button>
+            <button className ="ShopAddBtn" onClick={() => addToCart(props.plantName,props.plantStockInfo,props.plantImage,props.plantID,props.plantPrice)}>Add To Cart</button>
             </div>           
             
         </div>
